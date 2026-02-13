@@ -1,12 +1,12 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+--background: linear-gradient(168deg, #efe5d8 0%, #e3d6c5 40%, #cdb9a4 65%, #b49a86 100%);
+--foreground: #1e1514;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+--background: linear-gradient(168deg, #120c0e 0%, #24131a 35%, #2f1a22 65%, #26301d 100%);
+--foreground: #f3eadf;
   }
 }
 
@@ -17,6 +17,9 @@ body {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
@@ -39,4 +42,21 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: auto, 10px, auto, 10px;
+  text-decoration: none;
+}
+
+nav a:first-of-type {
+  margin-left: 0;
+}
+
+main {
+  padding: 20px;
 }
