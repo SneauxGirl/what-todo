@@ -2,9 +2,10 @@
 import { useEffect, useState } from "react";
 import styles from '@/app/page.module.css';
 import Link from "next/link";
+import { taskData } from '@/app/api/tasks/data';
 
 const Tasks = () => {
-    const [tasks, setTasks] = useState ([]);
+    const [tasks, setTasks] = useState ();
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
