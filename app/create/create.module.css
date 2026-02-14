@@ -1,0 +1,40 @@
+.input {
+    padding: 0.25rem 1rem;
+      border: 2px solid var(--text-primary);
+    border-right: none;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid var(--button-primary-hover);
+  border-right: none;
+}
+
+.input:hover {
+  border: 2px solid var(--button-primary-hover);
+  border-right: none;
+}
+
+.button {
+    padding: 0.25rem 1rem;
+    border: 2px solid var(--text-primary);
+    cursor: pointer;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.button:focus {
+  outline: none;
+  border: 2px solid var(--button-primary-hover);
+  background-color: var(--button-secondary-hover);
+  color: var(--text-secondary);
+}
+
+.form {
+    padding-top: 1rem;
+    display: flex;
+}
+
+.title {
+    text-align: center;
+}
