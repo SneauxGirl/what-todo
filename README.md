@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# What Todo
+
+A simple, stylish CRUD tasks app built with Next.js. Moody gothic neutrals meet clean functionality, because you deserve an app that acknowledges the work you have Todo.
+
+**Live:** [what-todo-topaz.vercel.app](https://what-todo-topaz.vercel.app)
+
+![Dark Mode](public/what-todo-dark.png)
+![Light Mode](public/what-todo-light.png)
+
+## Features
+
+- **Create** tasks from a dedicated task creation page
+- **Edit** existing tasks with pre-populated input fields
+- **Delete** tasks with confirmation prompt
+- **Dark & Light Mode** — automatically adapts to your system preferences
+- **Responsive** layout that works across devices
+
+> **Note:** Tasks are stored in memory and do not persist once the browser is closed or the server restarts.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v18+)
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+```bash
+git clone https://github.com/SneauxGirl/what-todo.git
+cd what-todo
+npm install
+```
+
+### Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the app.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font). You can change it in `app/layout.jsx`.
+## Deployment
 
-## Learn More
+This app is deployed on [Vercel](https://vercel.com/). If deploying your own instance, add the following environment variable in your Vercel project settings:
 
-To learn more about Next.js, take a look at the following resources:
+- **Key:** `NEXT_PUBLIC_API_URL`
+- **Value:** Your live app URL (e.g., `https://your-app.vercel.app`)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Locally, the app falls back to `http://localhost:3000` automatically — no `.env` file needed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Built With
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org/) — React framework with App Router and API routes
+- [CSS Modules](https://nextjs.org/docs/app/building-your-application/styling/css-modules) — Scoped component styling
+- [Vercel](https://vercel.com/) — Deployment and hosting
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js. Please note that any links to local or html demo repositories need be replaced with live or commented out for a successful deployment.
+## Always More Todo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is complete as-is. Here are some ideas for further development. If you implement one, let me know — I'll check it off and link to your project!
+
+- [ ] **Task completion** — Mark tasks as done without deleting them
+- [ ] **Persistent storage** — Client-side cookies or database integration so tasks survive a refresh
+- [ ] **Categories** — Group tasks by context (work, personal, errands, etc.)
+- [ ] **Priority levels** — Highlight high-priority tasks and auto-sort them to the top
+- [ ] **Smart reordering** — When a task is completed, the next highest priority moves up and gets highlighted automatically
+- [ ] **Sort options** — Toggle between original order, priority, or category-by-priority views
