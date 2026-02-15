@@ -1,4 +1,4 @@
-import { tasksData as tasks } from "./data";
+import { taskData as tasks } from "./data";
 
 export async function GET() {
     return new Response(JSON.stringify(tasks), {

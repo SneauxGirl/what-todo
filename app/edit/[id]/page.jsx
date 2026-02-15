@@ -48,3 +48,5 @@ const EditTaskPage = ({ params }) => {
     )
 
 }
+
+export default EditTaskPage;

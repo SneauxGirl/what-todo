@@ -4,7 +4,7 @@ import styles from '@/app/page.module.css';
 import Link from "next/link";
 import { taskData } from '@/app/api/tasks/data';
 
-const Tasks = () => {
+const TaskList = () => {
     const [tasks, setTasks] = useState ();
     const [loading, setLoading] = useState(true);
 
@@ -84,4 +84,4 @@ const Tasks = () => {
     )
 }
 
-export default Tasks;
+export default TaskList;
