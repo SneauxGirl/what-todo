@@ -1,8 +1,8 @@
 :root {
   --background: linear-gradient(168deg, #efe5d8 0%, #e3d6c5 40%, #cdb9a4 65%, #b49a86 100%);
-  --foreground: #1e1514;
+  --foreground: #2f1a22;
   --text-primary: #000;
-  --text-secondary: #666;
+  --text-secondary: #b49a86;
   --button-primary-hover: #383838;
   --button-secondary-hover: #eadbff;
   --button-secondary-border: #b49a86;

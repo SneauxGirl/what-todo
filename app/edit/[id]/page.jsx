@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
+import styles from '@/app/styles/shared.module.css';
 
 const EditTaskPage = ({ params }) => {
     const [title, setTitle] = useState('');
     const router = useRouter();
-    const { id } = params;
+    const { id } = use(params);
 
     useEffect(() => {
     const fetchTask = async () => {
@@ -39,10 +40,10 @@ const EditTaskPage = ({ params }) => {
 
     return (
         <div>
-            <h1>Edit </h1>
-            <form onSubmit={handleSubmit}>
-                <input type="text" value={title} onChange={(event) => setTitle(event.target.value)} />
-                <button type='submit'>Update</button>
+            <h1 className={styles.title}>Edit </h1>
+            <form className={styles.form} onSubmit={handleSubmit}>
+                <input className={styles.input} type="text" value={title} onChange={(event) => setTitle(event.target.value)} />
+                <button className={styles.button} type='submit'>Update</button>
             </form>
         </div>
     )
