@@ -1,6 +1,6 @@
 # What Todo
 
-A simple, stylish CRUD tasks app built with Next.js. Moody gothic neutrals meet clean functionality, because you deserve an app that acknowledges the work you have Todo.
+A simple, stylish CRUD tasks app built with Next.js. Moody neutrals meet clean functionality, because you deserve an app that acknowledges the work you have Todo.
 
 **Live:** [what-todo-topaz.vercel.app](https://what-todo-topaz.vercel.app)
 
