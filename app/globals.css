@@ -1,5 +1,5 @@
 :root {
-  --background: linear-gradient(168deg, #efe5d8 0%, #e3d6c5 40%, #cdb9a4 65%, #b49a86 100%);
+  --background: linear-gradient(168deg, #efe5d8 0%, #e3d6c5 48%, #eac69f 78%, #c19878 100%);
   --foreground: #2f1a22;
   --text-primary: #000;
   --text-secondary: #b49a86;
@@ -10,7 +10,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: linear-gradient(168deg, #120c0e 0%, #24131a 35%, #2f1a22 65%, #26301d 100%);
+    --background: linear-gradient(168deg, #1f1317 0%, #220311 45%, #4c0f27 68%, #3b5f1b 100%);
     --foreground: #f3eadf;
     --text-primary: #f3eadf;
     --text-secondary: #1a1a1a;
